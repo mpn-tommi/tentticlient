@@ -25,8 +25,8 @@ class Navigation extends Component {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey={3} as={Link} to='/form'>
-                  Form
+                <Nav.Link eventKey={3} as={Link} to='/questions'>
+                  Questions
                 </Nav.Link>
               </Nav.Item>
               </Nav>

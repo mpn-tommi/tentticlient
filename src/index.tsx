@@ -11,7 +11,7 @@ import { ConnectedRouter } from 'connected-react-router'
 
 import * as serviceWorker from './serviceWorker';
 import List from './components/List';
-import Form from './components/Form';
+import TheTester from './components/TheTester';
 import Navigation from './components/Navigation';
 
 
@@ -24,7 +24,7 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={App}/>
             <Route path="/list" component={List}/>
-            <Route path="/form" component={Form}/>
+            <Route path="/questions" component={TheTester}/>
             <Route render={() => <div>Not found</div>}/>
         </Switch>
         </div>
