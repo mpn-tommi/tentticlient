@@ -1,5 +1,4 @@
 import { Action } from "redux";
-import { Question } from "../model/question";
 import { GET_QUESTIONS } from "./action_types";
 
 export interface IQuestionAction<T=any> extends Action<string> {
