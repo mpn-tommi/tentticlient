@@ -17,7 +17,8 @@ export const initialState = {
     questions: [q1, q2],
     correct: 0,
     currentCategory: 1,
-    loading: false
+    loading: false,
+    loaded: false
 };
 
 export interface IQuestionState {
@@ -25,15 +26,16 @@ export interface IQuestionState {
     correct: number;
     currentCategory: number;
     loading: boolean;
+    loaded: boolean;
   }
   
 
 function rootReducer(state: IQuestionState = initialState,
     action: IQuestionAction) {
     if (action.type === GET_QUESTIONS) {
-      return {...state, questions: [], loading: true};
+      return {...state, questions: [], loading: true, loaded: false};
     } else if (action.type === QUESTIONS_RECEIVED) {
-        return {...state, loading: false, questions: action.payload}
+        return {...state, loading: false, questions: action.payload, loaded: true}
     }
     return state;
   };
