@@ -14,7 +14,7 @@ class ConnectedButton extends React.Component<ButtonProps, ButtonState> {
         this.props.fetchQuestions();
     }
     render() {
-        return (<Button onClick={this.goFetch}>Press to see news</Button>)
+        return (<Button onClick={this.goFetch}>Start the quiz</Button>)
 
     }
 }

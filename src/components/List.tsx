@@ -26,7 +26,7 @@ class List extends Component<ListProps, ListState> {
         // }
         return (
             <div>
-                <h1>List</h1>
+                <h1>The quiz</h1>
                 {this.props.loaded ? 
                 <TheTester kysymykset={this.props.questions}></TheTester>
                 :

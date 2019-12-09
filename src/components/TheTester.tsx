@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {push} from "connected-react-router";
 import { Dispatch } from 'redux';
 import SingleQuestion from './tester/SingleQuestion';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Question } from '../redux/model/question';
 
@@ -39,9 +39,9 @@ class TheTester extends Component<TesterProps> {
                 <div className="content">
                     <h1>Question {(this.state.nykyinen+1) + "/" + this.props.kysymykset.length}</h1>
                     <SingleQuestion question={nykyinen} nextQuestion={this.nextQuestion}/>
-                    {!this.state.loppu &&
+                    {/*!this.state.loppu &&
                     <Button className="pull-right" onClick={this.backHome}>Quit and go home</Button>
-                    }
+                    */}
                 </div>
         }
         return (

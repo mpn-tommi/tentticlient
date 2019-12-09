@@ -4,17 +4,8 @@ import { IQuestionAction } from '../actions';
 import { GET_QUESTIONS, QUESTIONS_RECEIVED } from '../actions/action_types'
 import { Question, Category, Choice } from '../model/question';
 
-const cat = new Category(1, "Dummy cat");
-let choices = [new Choice("Duubiduu", false), new Choice("Badadim badabum", true), new Choice("Barum badum", false)];
-const q1 = new Question("Foo bar", cat);
-q1.id = 1;
-q1.choices = choices;
-const q2 = new Question("Boo foo", cat);
-q2.id = 2;
-q2.choices = choices;
-
 export const initialState = {
-    questions: [q1, q2],
+    questions: [],
     correct: 0,
     currentCategory: 1,
     loading: false,
